@@ -38,7 +38,22 @@ Run in your `linux` terminal the `ctags` commando:
 
 `ctags -R --fields=+ *.c`
 
-* That is all you need. Now edit your `c` file and press `<F7>` to see a list of tags.
+### Creating the help file
+
+Run in your `vim` the command (once), after installation:
+
+`:helptags PATH`
+
+where PATH is the directory path you installed the plugin. It could be something like:
+
+* PATH = `/etc/vim/plugged/vimtaglist/doc/`
+* PATH = `~/.vim/plugged/vimtaglist/doc/`
+* PATH = `~/.vim/plugin/vimtaglist/doc/`
+
+That is all you need. Now edit your `c` file and press `<F7>` to see a list of tags.
+
+* note: if you install globally, don't forget to set permissions so all users can read the files (`taglist.vim` and `taglist.txt`) and access the directories where they are.
+
 
 ## Documentation (Help File)
 
