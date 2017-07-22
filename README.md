@@ -18,12 +18,27 @@ Dr. Bèco.
 
 ## Installation
 
+### Download and installation
+
 Use `vim-plug` manager and add:
 
 ```
 Plug 'drbeco/vimtaglist'
 ```
 
+### Configuration
+
+Add this command to your `~/.vimrc`
+
+`:nnoremap <silent> <F7> :TlistToggle<CR>`
+
+### Creating a `tags` file
+
+Run in your `linux` terminal the `ctags` commando:
+
+`ctags -R --fields=+ *.c`
+
+* That is all you need. Now edit your `c` file and press `<F7>` to see a list of tags.
 
 ## Documentation (Help File)
 
